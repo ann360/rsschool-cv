@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangles with Hover Effects</title>
+    <style>
+        .rectangle1, .rectangle2 {
+            background-color: #f0f0f0;
+            margin: 20px;
+            transition: all ease;
+        }
+        .rectangle1 {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db; /* Random color */
+            transition: width 3s;
+        }
+        .rectangle1:hover {
+            width: 150px;
+        }
+        .rectangle2 {
+            width: 300px;
+            height: 300px;
+            background-color: #e74c3c; /* Random color */
+            transition: box-shadow 5s;
+        }
+        .rectangle2:hover {
+            box-shadow: 0px 0px 20px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle1"></div>
+    <div class="rectangle2"></div>
+</body>
+</html>
